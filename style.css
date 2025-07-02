@@ -1,0 +1,171 @@
+@font-face{
+    src: url(fonts/corturier.ttf);
+    font-family: corturier;
+}
+@font-face{
+    src: url(fonts/League_Spartan.ttf);
+    font-family:spartan;
+}
+@font-face{
+    src: url(fonts/CrimsonText-Regular.ttf);
+    font-family:serif;
+}
+@font-face{
+    src: url(fonts/times.ttf);
+    font-family:roman
+}
+body{
+    background-color: rgb(255, 255, 213);
+}
+h1{
+    font-family: spartan, Arial, Helvetica, sans-serif;
+}
+h2{
+    font-family: corturier, 'Courier New', Courier, monospace;
+}
+h3{
+    font-family: corturier, 'Courier New', Courier, monospace;
+}
+p{
+    font-family: spartan, Arial, Helvetica, sans-serif;
+}
+#tested{
+    text-align:center;
+}
+.logo{
+    margin-right:50px;
+    height:150px;
+}
+.page_button{
+    border:none;
+    margin-right: 20px;
+    width:fit-content;
+    height:33px;
+    background: burlywood;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: rgb(255, 255, 213);
+    border-radius: 0.4em;
+    position:relative;
+    line-height: 20%;
+    overflow: hidden;
+    transition:background-color 200ms ease-in-out;
+    transition:color 200ms ease-in-out;
+}
+.page_button::before,
+.page_button::after{
+    content: "";
+    width: 0%;
+    height: 0.2em;
+    background-color: rgb(164, 125, 78);
+    position:absolute;
+    transition:width 200ms ease-in-out;
+}
+.page_button::before{
+    left:0;
+    top:0;
+}
+.page_button::after{
+    right:0;
+    bottom:0;
+}
+.page_button:hover::before,
+.page_button:hover::after{
+    width:100%;
+}
+.page_button:hover{
+    background-color: rgb(231, 199, 157);
+    color:black;
+}
+.btn {
+    font-family: Arial,
+    Helvetica, sans-serif;
+     text-transform: uppercase;
+}  
+.btn:hover .btn-slide-show-text1 {
+    margin-left: 65px;}
+.btn-shadow-drop {
+    position: relative;
+    background: rgb(249, 250, 250);
+    padding: 20px;
+    font-size: 0.9em;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transition: 0.3s ease-in-out;
+    left: 0px;  top: 0px;
+    width: 180px;
+}  
+.btn-shadow-drop:hover {
+    left: 4px;
+    top: 4px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+}  
+.btn-shadow-drop--brown {
+    border: 1px solid rgb(164, 125, 78);
+    color: rgb(164, 125, 78);
+    box-shadow: rgb(164, 125, 78) 4px 4px 0px 0px;
+}
+.food_image{
+    border-radius:25%;
+    height:300px;
+    border:3px solid;
+}
+html{
+    scroll-behavior:smooth;
+}
+.food_index{
+    background-color:rgb(211, 175, 132);
+    border-radius:5px;
+    width:650px;
+    height:300px;
+    padding:5px;
+    margin:10px;
+    float:left;
+}
+.home_pics{
+    height:165px;
+    margin:25px;
+    margin-bottom:10px;
+    float:left;
+    border: black 5px solid;
+    border-radius:10px;
+}
+.roman{
+    font-family:'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.gallery{
+    display: inline-block;
+    background-color: burlywood;
+    border-radius:3px;
+}
+.gallery:hover{
+    background-color: rgb(194, 157, 113);
+}
+.gallery_image{
+    width:250px;
+    margin:5px;
+}
+.gallery_description{
+    margin:5px;
+    text-align: center;
+}
+.search_item{
+    background-color: burlywood;
+    width:300px;
+    height:120px;
+    float:left;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding:5px;
+    margin:10px;
+}
+.search_item:hover{
+    background-color: rgb(194, 157, 113);
+}
